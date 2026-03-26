@@ -1,0 +1,81 @@
+[
+    {
+        "id": "33316c439d1ec859",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "nora_config_node",
+        "type": "nora-config",
+        "name": "nora config",
+        "group": ""
+    },
+    {
+        "id": "ui_group_light1",
+        "type": "ui_group",
+        "name": "[Home] light 1",
+        "tab": "home_tab",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "home_tab",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "rpi_gpio_12",
+        "type": "rpi-gpio out",
+        "z": "33316c439d1ec859",
+        "name": "PIN: 12",
+        "pin": "12",
+        "set": "",
+        "level": "0",
+        "out": "out",
+        "x": 200,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "dash_switch_1",
+        "type": "ui_switch",
+        "z": "33316c439d1ec859",
+        "name": "switch",
+        "label": "Light 1",
+        "group": "ui_group_light1",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "light1",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 200,
+        "y": 460,
+        "wires": [["rpi_gpio_12", "nora_light_1"]]
+    },
+    {
+        "id": "nora_light_1",
+        "type": "nora-light",
+        "z": "33316c439d1ec859",
+        "devicename": "light 1",
+        "nora": "nora_config_node",
+        "passthru": true,
+        "x": 200,
+        "y": 520,
+        "wires": [["dash_switch_1", "rpi_gpio_12"]]
+    }
+]

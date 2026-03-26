@@ -1,0 +1,17 @@
+{
+  "name": "smart-home-automation-gateway",
+  "version": "1.0.0",
+  "description": "Centralized IoT hub using Raspberry Pi 4 and Node-RED for Google Assistant and Dashboard control.",
+  "main": "Flows/main_flow.json",
+  "scripts": {
+    "start": "node-red Flows/main_flow.json",
+    "install-nodes": "npm install --prefix ~/.node-red"
+  },
+  "dependencies": {
+    "node-red-dashboard": "^3.4.0",
+    "node-red-contrib-smart-home": "^3.0.0",
+    "node-red-node-pi-gpio": "^2.0.0"
+  },
+  "author": "Ritul Raj Bhakat",
+  "license": "MIT"
+}

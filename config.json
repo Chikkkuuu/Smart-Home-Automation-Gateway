@@ -1,0 +1,22 @@
+{
+  "gateway_id": "RPI4_HOME_HUB_001",
+  "version": "1.0.2",
+  "auth": {
+    "nora_service": {
+      "email": "your-email@example.com",
+      "password": "your-nora-password",
+      "group": "Home_Automation_Main"
+    }
+  },
+  "connectivity": {
+    "local_ip": "169.254.79.11",
+    "node_red_port": 1880,
+    "mqtt_broker": "localhost",
+    "mqtt_port": 1883
+  },
+  "ui_settings": {
+    "theme": "dark",
+    "default_tab": "Home",
+    "refresh_rate_ms": 500
+  }
+}

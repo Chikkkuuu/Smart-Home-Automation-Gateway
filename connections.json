@@ -1,0 +1,33 @@
+{
+  "system_connections": [
+    {
+      "device_name": "Light 1",
+      "physical_pin": 12,
+      "gpio_mode": "Digital Output",
+      "virtual_node_id": "dash_switch_1",
+      "google_home_alias": "light 1",
+      "nora_node_id": "nora_light_1"
+    },
+    {
+      "device_name": "Light 2",
+      "physical_pin": 11,
+      "gpio_mode": "Digital Output",
+      "virtual_node_id": "dash_switch_2",
+      "google_home_alias": "Light",
+      "nora_node_id": "nora_light_2"
+    },
+    {
+      "device_name": "Light 3",
+      "physical_pin": 37,
+      "gpio_mode": "Digital Output",
+      "virtual_node_id": "dash_switch_3",
+      "google_home_alias": "Light",
+      "nora_node_id": "nora_light_3"
+    }
+  ],
+  "global_overrides": {
+    "fail_safe_state": "LOW",
+    "reconnect_on_boot": true,
+    "sync_latency_target_ms": 100
+  }
+}
