@@ -1,5 +1,5 @@
 # Smart Home Automation Gateway: Centralized IoT Ecosystem
-[cite_start]The **Smart Home Automation Gateway** is a centralized IoT hub designed to unify isolated smart devices into a single, cohesive local-area network[cite: 42]. By leveraging a **Raspberry Pi 4** as the primary edge controller, the system orchestrates communication between physical GPIO pins and consumer-facing interfaces like Google Assistant.
+The **Smart Home Automation Gateway** is a centralized IoT hub designed to unify isolated smart devices into a single, cohesive local-area network. By leveraging a **Raspberry Pi 4** as the primary edge controller, the system orchestrates communication between physical GPIO pins and consumer-facing interfaces like Google Assistant.
 
 ## Detailed System Architecture
 The architecture utilizes a flow-based programming model where hardware states are synchronized across physical, virtual, and voice-controlled interfaces.
@@ -13,12 +13,12 @@ The architecture utilizes a flow-based programming model where hardware states a
 * **Bidirectional Sync**: The flow is engineered so that toggling a physical pin, a dashboard switch, or a voice command updates all other interfaces simultaneously.
 
 ## Hardware Wiring Specification
-[cite_start]The gateway utilizes the high-bandwidth GPIO interface of the Raspberry Pi 4 to interact with relay modules and sensors[cite: 40, 42].
+The gateway utilizes the high-bandwidth GPIO interface of the Raspberry Pi 4 to interact with relay modules and sensors.
 | Component | Interface | Description |
 | :--- | :--- | :--- |
-| **Raspberry Pi 4** | **Master Controller** | [cite_start]Runs Node-RED, the MQTT Broker, and the UI Dashboard[cite: 40, 42]. |
+| **Raspberry Pi 4** | **Master Controller** | Runs Node-RED, the MQTT Broker, and the UI Dashboard. |
 | **GPIO 12, 11, 37** | **Digital Output** | Connected to relay modules to manage AC appliances like lights. |
-| **Relay Module** | **Switching** | [cite_start]Acts as the physical interface between the Pi's low-voltage signals and high-voltage loads[cite: 42]. |
+| **Relay Module** | **Switching** | Acts as the physical interface between the Pi's low-voltage signals and high-voltage loads. |
 | **Network Gateway** | **TCP/IP** | Facilitates communication between Node-RED and Google Assistant services. |
 
 ## Repository Structure
@@ -37,7 +37,7 @@ Smart_Home_Gateway/
 
 ## Deployment & Setup
 ### 1. Environment Configuration
-* [cite_start]**Node-RED Installation**: Ensure Node-RED is running on your Raspberry Pi 4[cite: 42].
+* **Node-RED Installation**: Ensure Node-RED is running on your Raspberry Pi 4.
 * **Palette Manager**: Install `node-red-dashboard` for UI elements and `node-red-contrib-smart-home` (or similar) for Google Assistant integration.
 ### 2. Gateway Initialization
 1.  **Flow Import**: Copy and paste the JSON flow into the Node-RED editor.
@@ -45,7 +45,6 @@ Smart_Home_Gateway/
 3.  **Voice Binding**: Configure the "nora config" nodes with your credentials to link the devices to your Google Home app.
 
 ## Professional Profile
-* [cite_start]**Developer**: Ritul Raj Bhakat (Firmware Developer) [cite: 1]
-* [cite_start]**Core Expertise**: IoT System Architecture, Node-RED, and Edge Computing[cite: 40, 42].
-* [cite_start]**Contact**: [ritulraj384@gmail.com](mailto:ritulraj384@gmail.com) [cite: 2]
-* **Links**: [LinkedIn](https://www.linkedin.com/in/ritul-raj-bhakat-521202277/) | [cite_start][GitHub Portfolio](https://github.com/Chikkkuuu) [cite: 2]
+* **Developer**: Ritul Raj Bhakat (Firmware Developer) 
+* **Core Expertise**: IoT System Architecture, Node-RED, and Edge Computing.
+* **Contact:** [ritulraj384@gmail.com](mailto:ritulraj384@gmail.com) | [LinkedIn](https://www.linkedin.com/in/ritul-raj-bhakat-521202277/) | [Github](https://github.com/Chikkkuuu) | [Portfolio](https://ritulrajbhakatportfolio.vercel.app/)
