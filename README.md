@@ -25,12 +25,14 @@ The gateway utilizes the high-bandwidth GPIO interface of the Raspberry Pi 4 to 
 The project focuses on the flow-based logic and dashboard configuration implemented within the Node-RED environment.
 ```text
 Smart_Home_Gateway/
-├── Flows/                    # Node-RED Logic
-│   ├── main_flow.json        # Contains GPIO, Dashboard Switch, and Google Home nodes
-│   └── config_nodes.json     # Configuration for NORA and UI Base settings
-├── Documentation/            # Visual Reference
-│   ├── node_red_flow.png     # Screenshot of the operational Flow 1 logic
-│   └── dashboard_layout.png  # UI Grouping for "[Home] light 1" and "[Home] Light 3"
+├── Flows/                    # Node-RED Core Logic
+│   ├── main_flow.json        # Unified JSON of all synced GPIO, Dashboard, and NORA nodes
+│   └── connections.json      # Machine-readable mapping of PINs (12, 11, 37) to aliases
+├── Configuration/            # System Environment
+│   ├── config.json           # NORA credentials, MQTT settings, and Gateway IP (169.254.79.11)
+│   └── package.json          # List of Node-RED nodes (dashboard, smart-home-nora)
+├── Documentation/            # Visual Architecture
+│   └── node_red_flow.png     # Screenshot of the operational logic for PINs 12, 11, and 37
 ├── LICENSE                   # MIT Open Source License
 └── README.md                 # Project Documentation
 ```
